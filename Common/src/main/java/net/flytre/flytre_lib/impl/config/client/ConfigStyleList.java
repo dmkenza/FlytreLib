@@ -34,7 +34,7 @@ abstract class ConfigStyleList<E extends ConfigStyleList.Entry<E>> extends Eleme
         int k = this.getRowLeft();
         int l = this.top + 4 - (int) this.getScrollAmount();
 
-        this.renderList(matrices, k, l, mouseX, mouseY, delta);
+        this.renderList(matrices, mouseX, mouseY, delta);
 
         int o = this.getMaxScroll();
         if (o > 0) {
@@ -61,7 +61,7 @@ abstract class ConfigStyleList<E extends ConfigStyleList.Entry<E>> extends Eleme
 
 
     @Override
-    public void renderList(MatrixStack matrices, int x, int y, int mouseX, int mouseY, float delta) {
+    public void renderList(MatrixStack matrices, int mouseX, int mouseY, float delta) {
         int entryCount = this.getEntryCount();
 
         int top;

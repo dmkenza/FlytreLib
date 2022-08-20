@@ -51,7 +51,7 @@ class ClientConnectionMixin {
 
     }
 
-    @ModifyVariable(method = "send(Lnet/minecraft/network/Packet;Lio/netty/util/concurrent/GenericFutureListener;)V", at = @At("HEAD"), argsOnly = true)
+    @ModifyVariable(method = "Lnet/minecraft/network/ClientConnection;send(Lnet/minecraft/network/Packet;Lnet/minecraft/network/PacketCallbacks;)V", at = @At("HEAD"), argsOnly = true)
     public Packet<?> flytre_lib$modifySentPacket(Packet<?> packet) {
         if (PacketUtilsImpl.REGISTERED_TYPES.containsKey(packet.getClass())) {
             PacketByteBuf buf = new PacketByteBuf(Unpooled.buffer());

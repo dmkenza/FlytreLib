@@ -84,7 +84,7 @@ public final class EntityUtils {
         double distanceToSelected = distance;
 
         for (Entity entity : looker.getEntityWorld().getOtherEntities(looker, looker.getBoundingBox().stretch(length).expand(1.0F))) {
-            if (entity.collides()) {
+            if (entity.isCollidable()) {
                 Box collisionBox = entity.getVisibilityBoundingBox();
                 Optional<Vec3d> intercept = collisionBox.raycast(lookerPosition, end);
                 if (collisionBox.contains(lookerPosition)) {

@@ -28,10 +28,10 @@ dependencies {
     include fabricApi.module("fabric-resource-loader-v0", fabric_version)
 
 
-    modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}"
-    modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}"
+//    modImplementation "me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}"
+//    include "me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}"
 
-    modLocalRuntime "com.terraformersmc:modmenu:${modmenu_version}"
+//    modLocalRuntime "com.terraformersmc:modmenu:${modmenu_version}"
 }
 
 

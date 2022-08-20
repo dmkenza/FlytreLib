@@ -116,7 +116,7 @@ public class ButtonListWidget<K extends ClickableWidget> extends ElementListWidg
             this.setScrollAmount(this.getMaxScroll());
         }
         int l = this.top + 4 - (int) getScrollAmount();
-        renderList(matrices, k, l, mouseX, mouseY, delta);
+        renderList(matrices, mouseX, mouseY, delta);
     }
 
 

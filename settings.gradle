@@ -10,15 +10,15 @@ pluginManagement {
             url = 'https://repo.spongepowered.org/repository/maven-public/'
         }
 
-        maven { url "https://maven.architectury.dev/" }
+//        maven { url "https://maven.architectury.dev/" }
         maven { url "https://files.minecraftforge.net/maven/" }
     }
 }
 
 rootProject.name = "Flytre Lib"
-include('Common', 'Fabric', 'Forge', 'Test-Common', 'Test-Fabric', 'Test-Forge')
+include('Common', 'Fabric')
 
 startParameter.excludedTaskNames << ':Common:build'
-startParameter.excludedTaskNames << ':Test-Common:build'
-startParameter.excludedTaskNames << ':Test-Fabric:build'
-startParameter.excludedTaskNames << ':Test-Forge:build'
+//startParameter.excludedTaskNames << ':Test-Common:build'
+//startParameter.excludedTaskNames << ':Test-Fabric:build'
+//startParameter.excludedTaskNames << ':Test-Forge:build'

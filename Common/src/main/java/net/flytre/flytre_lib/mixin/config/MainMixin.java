@@ -53,16 +53,16 @@ class MainMixin {
         }
     }
 
-    @Redirect(method = "main", at = @At(value = "NEW", target = "net/minecraft/client/util/Session"))
-    private static Session flytre_lib$auth_me(String username, String uuid2, String accessToken, Optional<String> xuid, Optional<String> clientId, Session.AccountType accountType) {
-
-        if (successful)
-            return new Session(accountInfo.name(), accountInfo.uuid(),
-                    accountInfo.token(), Optional.empty(), Optional.empty(),
-                    Session.AccountType.MOJANG);
-        else
-            return new Session(username, uuid2, accessToken, xuid, clientId, accountType);
-    }
+//    @Redirect(method = "main", at = @At(value = "NEW", target = "net/minecraft/client/util/Session"))
+//    private static Session flytre_lib$auth_me(String username, String uuid2, String accessToken, Optional<String> xuid, Optional<String> clientId, Session.AccountType accountType) {
+//
+//        if (successful)
+//            return new Session(accountInfo.name(), accountInfo.uuid(),
+//                    accountInfo.token(), Optional.empty(), Optional.empty(),
+//                    Session.AccountType.MOJANG);
+//        else
+//            return new Session(username, uuid2, accessToken, xuid, clientId, accountType);
+//    }
 
 
 }
